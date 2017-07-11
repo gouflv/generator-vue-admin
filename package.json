@@ -1,0 +1,14 @@
+{
+  "name": "generator-vue-admin",
+  "version": "1.0.0",
+  "description": "",
+  "files": [
+    "app",
+    "admin-common",
+    "module"
+  ],
+  "keywords": ["yeoman-generator"],
+  "dependencies": {
+    "yeoman-generator": "^1.1.1"
+  }
+}
