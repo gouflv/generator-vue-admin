@@ -1,11 +1,11 @@
 var Generator = require('yeoman-generator');
 
-var DEST_PATH = 'src/modules'
+var DEST_PATH = 'src/modules';
 
 module.exports = class extends Generator {
   initializing() {
-    this.module_name = null
-    this.module_desc = null
+    this.module_name = null;
+    this.module_desc = null;
   }
 
   prompting () {
@@ -26,7 +26,7 @@ module.exports = class extends Generator {
     ]).then(res => {
       this.module_name = res.module_name
       this.module_desc = res.module_desc
-    })
+    });
   }
 
   writing() {
@@ -41,7 +41,7 @@ module.exports = class extends Generator {
   }
 
   end () {
-   this.log(`Gen module success: ${this.module_name}`) 
+   this.log(`Created module success: ${this.module_name}`);
   }
 
 };
