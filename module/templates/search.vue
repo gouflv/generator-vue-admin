@@ -11,12 +11,12 @@
       <el-button
           type="primary"
           size="small"
-          @click="on_search_submit">
+          @click="submit">
           搜索
       </el-button>
       <el-button
           size="small"
-          @click="on_search_reset">
+          @click="reset">
           重置
       </el-button>
     </el-form-item>

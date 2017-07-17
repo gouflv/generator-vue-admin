@@ -12,18 +12,18 @@
         <template scope="scope">
           <el-button
             size="small"
-            @click="on_item_edit_click(scope.row)">编辑</el-button>
+            @click="edit_click(scope.row)">编辑</el-button>
           <el-button
             type="text"
             size="small"
-            @click="on_item_remove_click(scope.row)">删除</el-button>
+            @click="delete_click(scope.row)">删除</el-button>
         </template>
       </el-table-column>
 
     </el-table>
 
     <el-pagination v-show="table.items.length"
-      @current-change="page_index_change"
+      @current-change="table_index_change"
       :current-page="table.pageIndex"
       :page-size="table.pageSize"
       :total="table.totalCount"

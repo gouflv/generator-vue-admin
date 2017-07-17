@@ -9,7 +9,7 @@
         <el-button
           type="primary"
           size="small"
-          @click="on_item_add_click">
+          @click="append_click">
           新增
         </el-button>
       </div>
@@ -37,7 +37,6 @@
    * <%= module_name %>
    * @description <%= module_desc %>
    */
-  
   export default {
     name: '<%= module_name %>',
     extends: configBaseComponent({state, actions}),
