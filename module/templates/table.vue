@@ -24,9 +24,9 @@
 
     <el-pagination v-show="table.items.length"
       @current-change="table_index_change"
-      :current-page="table.pageIndex"
-      :page-size="table.pageSize"
-      :total="table.totalCount"
+      :current-page="table.page"
+      :page-size="table.page_size"
+      :total="table.pages"
       layout="total, prev, pager, next"
     ></el-pagination>
 
