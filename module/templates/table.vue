@@ -23,7 +23,7 @@
     </el-table>
 
     <el-pagination v-show="table.items.length"
-      @current-change="table_index_change"
+      @current-change="table_index_changed"
       :current-page="table.page"
       :page-size="table.page_size"
       :total="table.pages"
