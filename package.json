@@ -11,7 +11,7 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "git": "https://github.com/gouflv/vue-admin-common.git@1.0.0",
+    "vue-admin-common": "github:gouflv/vue-admin-common",
     "yeoman-generator": "^1.1.1"
   }
 }
